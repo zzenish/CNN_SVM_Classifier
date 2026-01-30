@@ -1,0 +1,33 @@
+# Virtual environment
+myenv/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Large model files
+*.keras
+
+# Large datasets
+*.npz
+*.npy
+*.csv
+*.tsv
+*.h5
+*.pkl
+
+# Logs and checkpoints
+*.log
+checkpoints/
+runs/
+wandb/
+lightning_logs/
+
+# Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# OS files
+.DS_Store
+Thumbs.db
+

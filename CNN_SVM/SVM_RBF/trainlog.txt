@@ -1,0 +1,27 @@
+Feature Extraction Done
+Train Features: (5392, 256)
+Test Features : (1355, 256)
+SVM Training Completed
+
+Accuracy: 0.8383763837638376
+
+Classification Report:
+
+              precision    recall  f1-score   support
+
+       Gazal       0.94      0.74      0.83       348
+   Lokdohori       0.95      0.88      0.92       414
+      Nephop       0.92      0.89      0.90       296
+         POP       0.61      0.85      0.71       297
+
+    accuracy                           0.84      1355
+   macro avg       0.86      0.84      0.84      1355
+weighted avg       0.87      0.84      0.84      1355
+
+
+Confusion Matrix:
+
+[[257   2   0  89]
+ [  3 365   6  40]
+ [  0   1 262  33]
+ [ 12  15  18 252]]
