@@ -109,7 +109,7 @@ history = model.fit(
 )
 
 # Save final model
-model.save("final_genre_cnn_aug.keras")
+#model.save("final_genre_cnn_aug.keras")
 print("\n########################### Training Complete! ###########################")
 print("✔ Best model saved as best_model_aug.keras")
 
@@ -125,47 +125,9 @@ print("Confusion Matrix:\n", confusion_matrix(y_true, y_pred))
 
 # -----------------------------
 # Accuracy Plot
-# -----------------------------
-plt.figure(figsize=(10, 5))
-plt.plot(history.history['accuracy'], label='Train Accuracy', color='gold')
-plt.plot(history.history['val_accuracy'], label='Validation Accuracy', color='green')
-plt.title('Accuracy Comparison')
-plt.xlabel('Epochs')
-plt.ylabel('Accuracy')
-plt.legend()
-plt.grid(True)
-plt.tight_layout()
-plt.savefig("accuracy_plot_aug.png")
 
-# -----------------------------
-# Loss Plot
-# -----------------------------
-plt.figure(figsize=(10, 5))
-plt.plot(history.history['loss'], label='Train Loss', color='gold')
-plt.plot(history.history['val_loss'], label='Validation Loss', color='green')
-plt.title('Losses Comparison')
-plt.xlabel('Epochs')
-plt.ylabel('Loss')
-plt.legend()
-plt.grid(True)
-plt.tight_layout()
-plt.savefig("loss_plot_aug.png")
 
 # -----------------------------
 # Confusion Matrix Visualization
-# -----------------------------
-cm = confusion_matrix(y_true, y_pred)
-plt.figure(figsize=(8,6))
-sns.heatmap(
-    cm, annot=True, fmt='d',
-    cmap="Blues",
-    cbar=False,
-    xticklabels=CLASSES,
-    yticklabels=CLASSES
-)
-plt.title('Confusion Matrix (Augmented)')
-plt.xlabel('Predicted')
-plt.ylabel('True')
-plt.tight_layout()
-plt.savefig("confusion_matrix_aug.png")
+
 
